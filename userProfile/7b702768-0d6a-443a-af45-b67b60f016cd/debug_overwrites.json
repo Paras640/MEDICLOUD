@@ -1,0 +1,36 @@
+{
+  "docVersion": "1.0.0",
+  "tenants": [
+    {
+      "tenantKey": "ac5496bf-20b4-4323-adf3-12d055f5e577",
+      "resources": [
+        {
+          "solutionResourceKey": "9109c6c5-20b2-4a36-9bdf-81dd911f4dff",
+          "reprovisioningIndex": 0,
+          "overwrite": {
+            "resourceKey": "9109c6c5-20b2-4a36-9bdf-81dd911f4dff",
+            "resourceName": "germanium074@gmail.com",
+            "folderKey": "85bceb5d-1046-46b5-a9f0-e550234d5bbe",
+            "folderFullyQualifiedName": "germanium074@gmail.com\u0027s workspace",
+            "folderPath": "242caf0b-111e-46a8-9ded-45a3ee2c382f.85bceb5d-1046-46b5-a9f0-e550234d5bbe",
+            "type": "Reference",
+            "kind": "connection"
+          }
+        },
+        {
+          "solutionResourceKey": "c77358f2-6d01-46ff-aee8-b51c54ec7e3d",
+          "reprovisioningIndex": 0,
+          "overwrite": {
+            "resourceKey": "c77358f2-6d01-46ff-aee8-b51c54ec7e3d",
+            "resourceName": "paras.kumar@bcah.christuniversity.in",
+            "folderKey": "85bceb5d-1046-46b5-a9f0-e550234d5bbe",
+            "folderFullyQualifiedName": "germanium074@gmail.com\u0027s workspace",
+            "folderPath": "242caf0b-111e-46a8-9ded-45a3ee2c382f.85bceb5d-1046-46b5-a9f0-e550234d5bbe",
+            "type": "Reference",
+            "kind": "connection"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "paras.kumar@bcah.christuniversity.in",
+    "kind": "connection",
+    "type": "uipath-google-gmail",
+    "apiVersion": "integrationservice.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "connectorName": "Gmail",
+      "name": "paras.kumar@bcah.christuniversity.in",
+      "authenticationType": "AuthenticateAfterDeployment",
+      "connectorVersion": "1.24.9",
+      "connectorKey": "uipath-google-gmail",
+      "pollingInterval": 5
+    },
+    "locks": [],
+    "key": "c77358f2-6d01-46ff-aee8-b51c54ec7e3d",
+    "files": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "3.0.0.0",
+  "bundleHash": null,
+  "addedAssemblyNames": [],
+  "discardedAssemblyNames": [],
+  "discardedAssemblyReplacements": {
+    "DataService.gpDQMEWEs3wg": "DataService.DataService.Entities"
+  },
+  "assembliesJitInfo": {
+    "DataService.gpDQMEWEs3wg": {
+      "createdAt": "2026-10-17T20:42:34.7817725+05:30",
+      "providerName": "DataService",
+      "rootNamespace": "DataService.Entities",
+      "typeNames": [
+        "PatientAppointments",
+        "SystemUser",
+        "UserType"
+      ]
+    },
+    "DataService.DataService.Entities": {
+      "createdAt": "2026-10-17T20:29:38.183356+00:00",
+      "providerName": "DataService",
+      "rootNamespace": "DataService.Entities",
+      "typeNames": [
+        "PatientAppointments",
+        "SystemUser",
+        "UserType"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "RPA Workflow",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "9ef2920d-6d7e-471a-81f4-f6be7be4f657",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "RPA Workflow",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "name": "RPA Workflow",
+      "package": {
+        "key": "7d198995-d6ae-4b25-bb4b-fbd5712c38ba"
+      },
+      "packageName": "CIA.3.PROJECT.MEDIFLOW.CLOUD.process.RPA.Workflow",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "tags": [],
+      "entryPoints": "{\r\n  \"$schema\": \"https://cloud.uipath.com/draft/2024-12/entry-point\",\r\n  \"entryPoints\": [\r\n    {\r\n      \"filePath\": \"Main.xaml\",\r\n      \"uniqueId\": \"c193eeae-d2a1-4c38-9320-5f3eecfcddc6\",\r\n      \"type\": \"process\"\r\n    }\r\n  ]\r\n}",
+      "entryPointName": "Main.xaml",
+      "entryPointUniqueId": "c193eeae-d2a1-4c38-9320-5f3eecfcddc6"
+    },
+    "locks": [],
+    "key": "50d7f34f-5ab7-4e9b-a0d7-c17d92d9d69b",
+    "files": []
+  }
+}

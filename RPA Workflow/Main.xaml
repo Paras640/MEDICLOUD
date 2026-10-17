@@ -1,0 +1,227 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:de="clr-namespace:DataService.Entities;assembly=DataService.DataService.Entities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="60">
+      <x:String>DataService.Entities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>UiPath.DataService.Activities.Models</x:String>
+      <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>DataService.DataService.Entities</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Core</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Annotations</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="828.2,655.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:IList(de:PatientAppointments)" Name="outputRecords" />
+      <Variable x:TypeArguments="de:PatientAppointments" Default="[new DataService.Entities.PatientAppointments]" Name="outputRecord">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">UpdateEntityRecord`1_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutputEntity</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="ui:CurrentJobInfo" Name="jobData">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ManualTrigger_1</x:String>
+            <x:String x:Key="SourcePropertyName">Result</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="710.4,68" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" Result="[jobData]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ManualTrigger>
+    <uda:QueryEntityRecords x:TypeArguments="de:PatientAppointments" FilterArguments="{x:Null}" RequiredForReadInput="{x:Null}" SolutionEntityKey="{x:Null}" SolutionEntityName="{x:Null}" SortByField="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="16e4b6a4-39ca-f111-bf5b-000d3a66d571" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="710.4,48" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_3" OutputRecords="[outputRecords]" QueriedEntityId="16e4b6a4-39ca-f111-bf5b-000d3a66d571" ScopeValue="Tenant" Skip="0" SortAscending="True" TimeoutInMs="30000" Top="100">
+      <uda:QueryEntityRecords.FilterValues>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">"germanium074@gmail.com"</InArgument>
+        </scg:List>
+      </uda:QueryEntityRecords.FilterValues>
+      <uda:QueryEntityRecords.RequiredForReadFieldNames>
+        <scg:List x:TypeArguments="x:String" Capacity="0" />
+      </uda:QueryEntityRecords.RequiredForReadFieldNames>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uda:QueryEntityRecords>
+    <ui:ForEach x:TypeArguments="de:PatientAppointments" CurrentIndex="{x:Null}" sap:WorkflowViewStateService.ViewState="{x:Null}" DisplayName="For Each currentPatientAppointments" sap:VirtualizedContainerService.HintSize="710.4,515.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[outputRecords]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="de:PatientAppointments">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="de:PatientAppointments" Name="currentPatientAppointments" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="710.4,449.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="680,48" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[currentPatientAppointments.PatientName]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <If Condition="[currentPatientAppointments.Status = &quot;&quot;&quot;new&quot;&quot;&quot;]" DisplayName="If" sap:VirtualizedContainerService.HintSize="680,377.6" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="680,144" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message 1" sap:VirtualizedContainerService.HintSize="649.6,48" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;New patient found: &quot; + currentPatientAppointments.PatientName]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <uda:UpdateEntityRecord x:TypeArguments="de:PatientAppointments" SolutionEntityKey="{x:Null}" SolutionEntityName="{x:Null}" Version="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="16e4b6a4-39ca-f111-bf5b-000d3a66d571" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="649.6,48" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_2" InputEntity="[currentPatientAppointments]" InputEntityInFieldView="[new DataService.Entities.PatientAppointments() With {  .AppointmentDate = new System.DateTimeOffset(2026, 10, 22, 14, 30, 0, new System.TimeSpan(5, 30, 0)),  .DoctorName = &quot;Rahul Kumar&quot;,  .Email = &quot;germanium074@gmail.com&quot;, .Id = currentPatientAppointments.Id }]" IsInRecordView="True" OutputEntity="[outputRecord]" RecordId="[currentPatientAppointments.Id]" ScopeValue="Tenant" TimeoutInMs="30000">
+                    <uda:UpdateEntityRecord.State>
+                      <udam:RecordState IsInRecordView="True">
+                        <udam:RecordState.SelectedFields>
+                          <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="3">
+                            <udam:DynamicEntityField Id="24e4b6a4-39ca-f111-bf5b-000d3a66d571" Name="AppointmentDate">
+                              <udam:DynamicEntityField.ArgumentValue>
+                                <InArgument x:TypeArguments="s:DateTimeOffset">10/22/2026 14:30:00 +05:30</InArgument>
+                              </udam:DynamicEntityField.ArgumentValue>
+                            </udam:DynamicEntityField>
+                            <udam:DynamicEntityField Id="23e4b6a4-39ca-f111-bf5b-000d3a66d571" Name="DoctorName">
+                              <udam:DynamicEntityField.ArgumentValue>
+                                <InArgument x:TypeArguments="x:String">Rahul Kumar</InArgument>
+                              </udam:DynamicEntityField.ArgumentValue>
+                            </udam:DynamicEntityField>
+                            <udam:DynamicEntityField Id="21e4b6a4-39ca-f111-bf5b-000d3a66d571" Name="Email">
+                              <udam:DynamicEntityField.ArgumentValue>
+                                <InArgument x:TypeArguments="x:String">germanium074@gmail.com</InArgument>
+                              </udam:DynamicEntityField.ArgumentValue>
+                            </udam:DynamicEntityField>
+                          </scg:List>
+                        </udam:RecordState.SelectedFields>
+                      </udam:RecordState>
+                    </uda:UpdateEntityRecord.State>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uda:UpdateEntityRecord>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="680,144" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[&quot;Hello &quot; + currentPatientAppointments.PatientName + &quot;,&lt;br&gt;&lt;br&gt;&quot; +&#xA;&quot;Aapka appointment reschedule ho gaya hai!&lt;br&gt;&lt;br&gt;&quot; +&#xA;&quot;&lt;b&gt;Token Number:&lt;/b&gt; &quot; + currentPatientAppointments.TokenNumber + &quot;&lt;br&gt;&quot; +&#xA;&quot;&lt;b&gt;Appointment Date:&lt;/b&gt; &quot; + currentPatientAppointments.AppointmentDate.ToString() + &quot;&lt;br&gt;&quot; +&#xA;&quot;&lt;b&gt;Doctor Name:&lt;/b&gt; &quot; + currentPatientAppointments.DoctorName + &quot;&lt;br&gt;&lt;br&gt;&quot; +&#xA;&quot;Regards,&lt;br&gt;Hospital Team&quot;]" ConnectionId="c77358f2-6d01-46ff-aee8-b51c54ec7e3d" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="649.6,48" sap2010:WorkflowViewState.IdRef="SendEmailConnections_2" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Appointment Rescheduled" To="[New List(Of String) From { currentPatientAppointments.Email }]" UseConnectionService="True">
+                    <uga:SendEmailConnections.Attachments>
+                      <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+                    </uga:SendEmailConnections.Attachments>
+                    <uga:SendEmailConnections.AttachmentsBackup>
+                      <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                        <usau:BackupSlot.BackupValues>
+                          <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                        </usau:BackupSlot.BackupValues>
+                      </usau:BackupSlot>
+                    </uga:SendEmailConnections.AttachmentsBackup>
+                    <uga:SendEmailConnections.InputTypeBackup>
+                      <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+                        <usau:BackupSlot.BackupValues>
+                          <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+                        </usau:BackupSlot.BackupValues>
+                      </usau:BackupSlot>
+                    </uga:SendEmailConnections.InputTypeBackup>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uga:SendEmailConnections>
+                  <uda:DeleteEntityRecord x:TypeArguments="de:PatientAppointments" InputEntity="{x:Null}" SolutionEntityKey="{x:Null}" SolutionEntityName="{x:Null}" Version="{x:Null}" ContinueOnError="False" DisplayName="Delete Entity Record" EntityId="16e4b6a4-39ca-f111-bf5b-000d3a66d571" sap:VirtualizedContainerService.HintSize="649.6,48" sap2010:WorkflowViewState.IdRef="DeleteEntityRecord`1_3" RecordId="[currentPatientAppointments.Id]" ScopeValue="Tenant" TimeoutInMs="30000">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uda:DeleteEntityRecord>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

@@ -68,6 +68,4 @@ The developed UiPath Cloud RPA solution automates the end-to-end appointment lif
 
 
 
-* **Class:** 3BCA B
-* **Registration Number:** 25215133
-* **Institution:** CHRIST (Deemed to be University)
+
